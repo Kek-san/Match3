@@ -12,8 +12,8 @@ public class Gem : MonoBehaviour {
         
     }
 
-    public GemTypeSO GetType() {
-        return type;
-    }
+    public GemTypeSO GetType() => type;
+
+    public void DestroyGem() => Destroy(gameObject);
 
 }
