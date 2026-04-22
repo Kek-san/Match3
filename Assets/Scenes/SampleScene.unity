@@ -350,6 +350,8 @@ GameObject:
   m_Component:
   - component: {fileID: 634726314}
   - component: {fileID: 634726313}
+  - component: {fileID: 634726316}
+  - component: {fileID: 634726315}
   m_Layer: 0
   m_Name: Match3
   m_TagString: Untagged
@@ -374,6 +376,13 @@ MonoBehaviour:
   cellsize: 1
   originPosition: {x: 0, y: 0, z: 0}
   debug: 1
+  gemPrefab: {fileID: 2067105787662343300, guid: 0c4147bb26d35ef47ae4e8ed5308bc67, type: 3}
+  gemTypeArray:
+  - {fileID: 11400000, guid: cce4e78dcc3f300478e40bdc123ce5dd, type: 2}
+  - {fileID: 11400000, guid: dd40b68f4236ff344aa2989eb0e98f30, type: 2}
+  - {fileID: 11400000, guid: 2deceed0fb28e934bbee05332663837c, type: 2}
+  - {fileID: 11400000, guid: ca91edfc1e9778d499ca7984dafb6916, type: 2}
+  ease: 5
 --- !u!4 &634726314
 Transform:
   m_ObjectHideFlags: 0
@@ -389,6 +398,48 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &634726315
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 634726312}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.InputSystem::UnityEngine.InputSystem.PlayerInput
+  m_Actions: {fileID: -944628639613478452, guid: f9056dd0db9f31a48817b07db4aaa4b0, type: 3}
+  m_NotificationBehavior: 0
+  m_UIInputModule: {fileID: 0}
+  m_DeviceLostEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_DeviceRegainedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ControlsChangedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ActionEvents: []
+  m_NeverAutoSwitchControlSchemes: 0
+  m_DefaultControlScheme: 
+  m_DefaultActionMap: Player
+  m_SplitScreenIndex: -1
+  m_Camera: {fileID: 0}
+--- !u!114 &634726316
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 634726312}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 769bbb9fad4f73946b5cd4199257c56d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InputReader
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
